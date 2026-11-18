@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b18">
+<title>CLAIREN AI</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  min-height:100vh;
+  background:
+  radial-gradient(ellipse at 10% 5%,#243d82 0%,transparent 38%),
+  radial-gradient(ellipse at 90% 35%,#40216d 0%,transparent 35%),
+  #080b18;
+  color:#fff;
+  font-family:Inter,Arial,sans-serif;
+  padding:22px 18px 110px;
+  overflow-x:hidden;
+}
+
+header{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+
+.logo{
+ font-size:23px;
+ font-weight:900;
+ letter-spacing:-1px;
+ background:linear-gradient(90deg,#fff,#72aaff);
+ -webkit-background-clip:text;
+ color:transparent;
+}
+
+.menu{
+ width:43px;height:43px;
+ display:grid;place-items:center;
+ border:1px solid #ffffff20;
+ background:#ffffff0c;
+ backdrop-filter:blur(20px);
+ border-radius:15px;
+ font-size:21px;
+}
+
+.hero{margin-top:48px}
+
+.tag{
+ display:inline-block;
+ padding:8px 13px;
+ border:1px solid #78a9ff45;
+ background:#397bff18;
+ color:#9fc4ff;
+ border-radius:30px;
+ font-size:11px;
+ letter-spacing:1px;
+}
+
+h1{
+ margin-top:19px;
+ font-size:39px;
+ line-height:1.13;
+ letter-spacing:-1.8px;
+}
+
+h1 span{
+ background:linear-gradient(90deg,#73aaff,#b48aff);
+ -webkit-background-clip:text;
+ color:transparent;
+}
+
+.subtitle{
+ color:#9daac3;
+ font-size:14px;
+ line-height:1.6;
+ margin-top:13px;
+}
+
+.searchbox{
+ margin-top:28px;
+ padding:17px;
+ border:1px solid #ffffff25;
+ background:linear-gradient(135deg,#ffffff18,#ffffff05);
+ backdrop-filter:blur(25px);
+ border-radius:23px;
+ box-shadow:0 15px 50px #0005;
+}
+
+.searchbox input{
+ width:100%;
+ background:transparent;
+ border:0;
+ outline:none;
+ color:white;
+ font-size:15px;
+}
+
+.searchbox input::placeholder{color:#8995ae}
+
+.searchbottom{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin-top:18px;
+}
+
+.searchbottom small{color:#8795b0}
+
+.send{
+ width:40px;height:40px;
+ border:0;
+ border-radius:14px;
+ color:white;
+ font-size:19px;
+ background:linear-gradient(135deg,#438bff,#8758f6);
+}
+
+.section{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin:34px 0 17px;
+}
+
+.section h2{font-size:18px}
+.section small{color:#8192b4}
+
+.grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:13px;
+}
+
+.card{
+ min-height:137px;
+ padding:19px 16px;
+ border-radius:23px;
+ border:1px solid #ffffff19;
+ background:linear-gradient(145deg,#ffffff13,#ffffff05);
+ backdrop-filter:blur(20px);
+ box-shadow:inset 0 1px #ffffff10,0 12px 35px #0002;
+ transition:.25s;
+}
+
+.card:active{transform:scale(.96)}
+
+.icon{
+ width:43px;height:43px;
+ display:grid;place-items:center;
+ border-radius:15px;
+ background:linear-gradient(135deg,#428bff35,#9b6bff25);
+ border:1px solid #8bbaff30;
+ font-size:21px;
+}
+
+.card b{
+ display:block;
+ font-size:14px;
+ margin-top:15px;
+}
+
+.card p{
+ font-size:11px;
+ color:#8f9db7;
+ margin-top:5px;
+}
+
+.bottom{
+ position:fixed;
+ bottom:13px;
+ left:14px;
+ right:14px;
+ padding:13px 8px;
+ display:flex;
+ justify-content:space-around;
+ border-radius:24px;
+ border:1px solid #ffffff20;
+ background:#111a2ce8;
+ backdrop-filter:blur(30px);
+ box-shadow:0 10px 40px #0008;
+}
+
+.nav{
+ text-align:center;
+ color:#8290a9;
+ font-size:10px;
+}
+
+.nav span{
+ display:block;
+ font-size:20px;
+ margin-bottom:5px;
+}
+
+.nav.active{color:#83b5ff}
+
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">CLAIREN AI<span style="color:#75aaff">.</span></div>
+ <div class="menu">☰</div>
+</header>
+
+<main>
+
+<section class="hero">
+ <div class="tag">✦ YOUR INTELLIGENT WORLD</div>
+
+ <h1>One AI.<br><span>Infinite</span> Possibilities.</h1>
+
+ <p class="subtitle">
+ Meet your intelligent assistant.<br>
+ Create, explore and achieve more.
+ </p>
+</section>
+
+<div class="searchbox">
+ <input type="text" placeholder="Ask CLAIREN anything...">
+ <div class="searchbottom">
+  <small>✦ Powered by CLAIREN</small>
+  <button class="send">↑</button>
+ </div>
+</div>
+
+<div class="section">
+ <h2>Explore AI</h2>
+ <small>Discover tools →</small>
+</div>
+
+<div class="grid">
+
+ <div class="card">
+  <div class="icon">✦</div>
+  <b>AI Chat</b>
+  <p>Your intelligent assistant</p>
+ </div>
+
+ <div class="card">
+  <div class="icon">🎬</div>
+  <b>Video Tools</b>
+  <p>Video link processing</p>
+ </div>
+
+ <div class="card">
+  <div class="icon">🌐</div>
+  <b>Translator</b>
+  <p>Break language barriers</p>
+ </div>
+
+ <div class="card">
+  <div class="icon">✍️</div>
+  <b>AI Writer</b>
+  <p>Create amazing content</p>
+ </div>
+
+ <div class="card">
+  <div class="icon">⌘</div>
+  <b>AI Coding</b>
+  <p>Build something new</p>
+ </div>
+
+ <div class="card">
+  <div class="icon">📄</div>
+  <b>Documents</b>
+  <p>Work smarter with files</p>
+ </div>
+
+</div>
+</main>
+
+<nav class="bottom">
+ <div class="nav active"><span>⌂</span>Home</div>
+ <div class="nav"><span>✦</span>Explore</div>
+ <div class="nav"><span>◷</span>History</div>
+ <div class="nav"><span>◎</span>Profile</div>
+</nav>
+
+</body>
+  </html>
+  
